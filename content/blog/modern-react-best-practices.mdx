@@ -1,0 +1,43 @@
+---
+title: "Modern React Best Practices for Scalable Applications"
+description: "Patterns and conventions that keep React codebases maintainable as teams and features grow."
+date: "2026-05-12"
+updatedAt: "2026-05-12"
+author: "Muhammad Hammad"
+tags: ["React", "TypeScript", "Architecture"]
+image: "/images/placeholder.svg"
+published: true
+readingTime: "9 min read"
+---
+
+React is flexible, but that flexibility can become a liability without clear conventions. Here are practices I rely on to keep React applications scalable.
+
+## 1. Favor Composition Over Inheritance
+
+Build small, focused components and compose them into larger UIs. This makes testing, reuse, and refactoring far easier.
+
+## 2. Use TypeScript Strictly
+
+Strict TypeScript catches bugs before they reach production. Define props explicitly, avoid `any`, and use discriminated unions for complex state.
+
+## 3. Separate Business Logic from UI
+
+Keep components focused on rendering. Move data fetching, validation, and state machines into hooks and services.
+
+## 4. Lift State Carefully
+
+Only lift state when multiple components genuinely need it. Local state is simpler and reduces unnecessary re-renders.
+
+## 5. Optimize Rendering Intentionally
+
+Memoization is a tool, not a default. Profile first, then apply React.memo, useMemo, and useCallback where they actually help.
+
+## 6. Build a Design System
+
+A shared component library with consistent tokens for spacing, color, and typography reduces decision fatigue and visual inconsistency.
+
+## 7. Test Behavior, Not Implementation
+
+Write tests that verify what users see and do, not how the component is structured internally. This makes tests resilient to refactoring.
+
+Scalable React is less about the framework and more about disciplined architecture.
