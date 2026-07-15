@@ -53,50 +53,6 @@ export function EpadsExpertiseSection() {
         </MotionSection>
 
         {/* Mistakes and best practices */}
-        <div className="mt-20 grid gap-8 lg:grid-cols-2">
-          <MotionSection delay={0.2}>
-            <div className="rounded-2xl border border-white/[0.08] bg-surface/30 p-6 md:p-8">
-              <div className="mb-6 flex items-center gap-3">
-                <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-warning/10 text-warning">
-                  <AlertTriangle className="h-5 w-5" />
-                </div>
-                <h3 className="font-heading text-xl font-bold text-foreground">Common Mistakes</h3>
-              </div>
-
-              <div className="space-y-4">
-                {epadsMistakes.map((item, index) => (
-                  <div key={index} className="rounded-xl border border-white/[0.08] bg-background/50 p-4">
-                    <p className="font-medium text-foreground">{item.mistake}</p>
-                    <p className="mt-1 text-sm text-muted"><span className="text-success">Fix: </span>{item.solution}</p>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </MotionSection>
-
-          <MotionSection delay={0.3}>
-            <div className="rounded-2xl border border-white/[0.08] bg-surface/30 p-6 md:p-8">
-              <div className="mb-6 flex items-center gap-3">
-                <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-success/10 text-success">
-                  <Lightbulb className="h-5 w-5" />
-                </div>
-                <h3 className="font-heading text-xl font-bold text-foreground">Best Practices</h3>
-              </div>
-
-              <div className="space-y-4">
-                {epadsBestPractices.map((item, index) => (
-                  <div key={index} className="flex gap-4 rounded-xl border border-white/[0.08] bg-background/50 p-4">
-                    <CheckCircle2 className="mt-0.5 h-5 w-5 flex-shrink-0 text-success" />
-                    <div>
-                      <p className="font-medium text-foreground">{item.title}</p>
-                      <p className="mt-1 text-sm text-muted">{item.description}</p>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </MotionSection>
-        </div>
       </Container>
     </section>
   );

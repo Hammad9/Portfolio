@@ -9,6 +9,16 @@ const nextConfig: NextConfig = {
   typescript: {
     ignoreBuildErrors: false,
   },
+  turbopack: {
+    rules: {
+      "**/*.{tsx,jsx}": {
+        loaders: [{
+          loader: "@locator/webpack-loader",
+          options: { env: "development" }
+        }]
+      }
+    }
+  }
 };
 
 export default nextConfig;

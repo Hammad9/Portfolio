@@ -7,109 +7,393 @@ export interface Project {
   solution: string;
   result: string;
   image: string;
+  gallery: string[];
   techStack: string[];
+  categories: string[];
+  role: string;
+  responsibilities: string[];
+  features: string[];
+  duration?: string;
+  client: string;
+  industry: string;
   liveUrl?: string;
-  githubUrl?: string;
+  caseStudyUrl: string;
   featured: boolean;
-  category: string;
 }
 
 export const projects: Project[] = [
   {
     id: "dojo-plus",
-    title: "DOJO+",
-    tagline: "All-in-one business operations platform for modern teams.",
+    title: "Dojo+",
+    tagline: "A dedicated social network for martial arts communities.",
     description:
-      "A comprehensive operations dashboard that consolidates project management, team collaboration, and client communication into a single interface.",
+      "A specialized social platform for martial artists, gyms, and event organizers. It replaces generic networks with profiles, achievement tracking, event records, and instructor certifications tailored to combat sports.",
     problem:
-      "The client was juggling five disconnected tools, causing duplicated work, missed deadlines, and poor client visibility.",
+      "Schools and athletes were scattered across generic platforms and spreadsheets to track achievements, events, and credentials.",
     solution:
-      "Built a unified Next.js dashboard with real-time updates, role-based access, integrated task boards, and automated client reporting.",
+      "Built a Next.js platform with rich profiles, achievement showcases, event tracking, and instructor certification workflows.",
     result:
-      "Reduced tool subscription costs by 40% and improved project delivery speed by 30% within the first quarter.",
-    image: "/images/placeholder.svg",
-    techStack: ["Next.js", "TypeScript", "Tailwind CSS", "PostgreSQL", "Prisma"],
-    liveUrl: "#",
-    githubUrl: "#",
+      "Created a central hub for martial arts identity and activity, reducing manual updates and giving schools a repeatable way to manage credentials.",
+    image: "/images/projects/dojo-plus/cover.jpg",
+    gallery: [
+      "/images/projects/dojo-plus/gallery-1.png",
+      "/images/projects/dojo-plus/gallery-2.png",
+    ],
+    techStack: [
+      "Next.js",
+      "React",
+      "TypeScript",
+      "Material UI",
+      "Airtable",
+      "Google Fit API",
+      "Blockchain",
+    ],
+    categories: ["Next.js", "Web Application", "Frontend"],
+    role: "Full-Stack Developer",
+    responsibilities: [
+      "Architected the Next.js application structure and responsive screens",
+      "Implemented user profiles, achievement showcases, and event participation tracking",
+      "Built instructor certification management workflows",
+      "Integrated Airtable and Google Fit API for data and activity syncing",
+      "Delivered admin screens and content maintenance tools",
+    ],
+    features: [
+      "User profiles with martial arts identity and achievement showcases",
+      "Event participation tracking and history",
+      "Instructor certification management",
+      "Social discovery and community networking",
+      "Airtable-backed operational data layer",
+      "Google Fit API activity integration",
+    ],
+    duration: "Ongoing engagement",
+    client: "Dojo+",
+    industry: "Sports & Fitness",
+    caseStudyUrl: "/case-studies/dojo-plus",
     featured: true,
-    category: "SaaS Platform",
   },
   {
-    id: "gohighlevel-crm",
-    title: "GoHighLevel CRM",
-    tagline: "Custom CRM and automation workspace for a service business.",
+    id: "spark-host",
+    title: "Spark Host",
+    tagline: "AI-powered social and email marketing for hospitality and property teams.",
     description:
-      "A fully configured GoHighLevel workspace with custom pipelines, automated follow-ups, and integrated appointment scheduling.",
+      "A marketing dashboard that unifies social media, email campaigns, contact management, and property sync for hospitality teams.",
     problem:
-      "Leads were falling through the cracks because follow-up was manual and the sales team had no unified view of prospects.",
+      "Teams were juggling separate tools for social posts, email, contacts, and property data, slowing campaigns and fragmenting reporting.",
     solution:
-      "Designed and deployed a GoHighLevel environment with lead capture forms, automated SMS/email nurture sequences, and pipeline-driven task automation.",
+      "Developed a Next.js App Router dashboard with JWT auth, Stripe billing, social Graph API integrations, Lodgify sync, an AI content assistant, and a drag-and-drop email editor.",
     result:
-      "Increased lead-to-appointment conversion by 55% and saved the sales team 15+ hours per week.",
-    image: "/images/placeholder.svg",
-    techStack: ["GoHighLevel", "Zapier", "Webhooks", "JavaScript"],
+      "Centralized marketing workflows, reduced tool switching, and gave teams clearer campaign ownership.",
+    image: "/images/projects/spark-host/cover.jpg",
+    gallery: [
+      "/images/projects/spark-host/gallery-1.jpg",
+      "/images/projects/spark-host/gallery-2.avif",
+    ],
+    techStack: [
+      "Next.js",
+      "React",
+      "TypeScript",
+      "Next.js App Router",
+      "Material UI",
+      "MUI X Data Grid",
+      "TanStack Query",
+      "Redux Toolkit",
+      "Strapi API",
+      "Stripe",
+      "Lodgify API",
+      "Facebook Graph API",
+      "Instagram Graph API",
+      "Cloudinary API",
+      "FullCalendar",
+      "React Email Editor",
+    ],
+    categories: ["Next.js", "Web Application", "Business Automation", "Frontend"],
+    role: "Full-Stack Developer",
+    responsibilities: [
+      "Implemented the Next.js App Router dashboard and responsive UI",
+      "Built authentication, subscription, and account settings flows",
+      "Integrated Facebook and Instagram Graph APIs for publishing and scheduling",
+      "Connected Lodgify API for property synchronization",
+      "Developed the AI content assistant and social post composer",
+      "Created the email campaign builder with drag-and-drop editor",
+      "Set up media library, contact CSV import, and analytics screens",
+    ],
+    features: [
+      "JWT authentication and Stripe subscription billing",
+      "Facebook and Instagram account connection and post scheduling",
+      "AI content assistant for marketing copy",
+      "Social post composer with draft, scheduled, and published states",
+      "Drag-and-drop email campaign builder",
+      "Lodgify property synchronization",
+      "Contact database with CSV import and media library",
+      "Product tours and notification drawer",
+    ],
+    duration: "Ongoing engagement",
+    client: "Spark Host",
+    industry: "Hospitality & Property Marketing",
     liveUrl: "#",
-    githubUrl: "#",
+    caseStudyUrl: "/case-studies/spark-host",
     featured: true,
-    category: "CRM Automation",
   },
   {
-    id: "tender-management-dashboard",
-    title: "Tender Management Dashboard",
-    tagline: "Track opportunities, deadlines, and compliance in one place.",
+    id: "pivdc-website",
+    title: "PiVDC Website",
+    tagline: "BIM/VDC automation product portal for Pinnacle Infotech.",
     description:
-      "A procurement dashboard that helps businesses monitor active tenders, manage documentation, and never miss a submission deadline.",
+      "A public product portal and authenticated customer workspace for Pinnacle Infotech's BIM/VDC automation tools.",
     problem:
-      "Procurement teams were missing tender deadlines and struggling to organize compliance documents across spreadsheets and emails.",
+      "Discovery, customer self-service, and internal admin were spread across disconnected touchpoints.",
     solution:
-      "Built a React dashboard with deadline tracking, document upload workflows, status boards, and automated reminders.",
+      "Built a React/Next.js portal with AWS Amplify, AppSync GraphQL, Cognito auth, role-based access, AI copilot search, and a super-admin console.",
     result:
-      "Improved on-time submission rate from 60% to 95% and cut document search time by 70%.",
-    image: "/images/placeholder.svg",
-    techStack: ["React", "TypeScript", "Node.js", "MongoDB"],
-    liveUrl: "#",
-    githubUrl: "#",
+      "Unified product marketing, customer operations, and admin control into one scalable platform.",
+    image: "/images/projects/pivdc/cover.jpg",
+    gallery: [
+      "/images/projects/pivdc/gallery-1.jpg",
+    ],
+    techStack: [
+      "Next.js",
+      "React",
+      "TypeScript",
+      "Next.js Pages Router",
+      "Material UI",
+      "MUI X Data Grid Pro",
+      "TanStack Query",
+      "AWS Amplify",
+      "AWS AppSync",
+      "AWS Cognito",
+      "GraphQL",
+      "GraphQL Subscriptions",
+      "AWS S3 Pre-signed Uploads",
+      "Google Analytics",
+      "Vercel Analytics",
+    ],
+    categories: ["Next.js", "Web Application", "Website", "Frontend"],
+    role: "Full-Stack Developer",
+    responsibilities: [
+      "Built public marketing pages and BIM/VDC product discovery experience",
+      "Implemented AWS Cognito authentication and role-based access control",
+      "Developed customer dashboards with assigned packages and requisition workflows",
+      "Created super-admin modules for packages, add-ins, installers, organizations, and invoices",
+      "Integrated AI copilot search with streaming GraphQL responses",
+      "Added release notes management, QR code generation, CSV export, and SEO sitemap",
+    ],
+    features: [
+      "Public marketing website and product discovery pages",
+      "AI copilot search with streaming GraphQL responses",
+      "AWS Cognito authentication with Google federated sign-in",
+      "Role-based access control and account dashboards",
+      "Requisition submission, voting, comments, and attachments",
+      "Super-admin console for packages, add-ins, installers, and organizations",
+      "QR code generator, CSV export, and analytics",
+    ],
+    duration: "Ongoing engagement",
+    client: "Pinnacle Infotech",
+    industry: "AEC / BIM Software",
+    caseStudyUrl: "/case-studies/pivdc-website",
     featured: true,
-    category: "Business Tool",
   },
   {
-    id: "business-crm",
-    title: "Business CRM",
-    tagline: "Lightweight CRM tailored for small business sales workflows.",
+    id: "dojo-plus-school",
+    title: "Dojo+ School",
+    tagline: "A discovery directory for martial arts schools and programs.",
     description:
-      "A custom CRM solution for managing contacts, deals, tasks, and sales pipelines without the bloat of enterprise platforms.",
+      "A searchable directory that helps students discover martial arts schools by discipline, location, schedule, and program details.",
     problem:
-      "A growing business needed a CRM that matched their exact sales process without expensive per-user licensing.",
+      "School information was scattered across websites, social pages, and listing services, making comparison difficult.",
     solution:
-      "Developed a Next.js CRM with custom deal stages, activity tracking, contact management, and sales reporting.",
+      "Developed a Next.js directory with listing pages, rich school profiles, and location-based browsing tied to the Dojo+ data layer.",
     result:
-      "Enabled the team to manage 3x more deals with the same headcount and eliminated recurring SaaS CRM fees.",
-    image: "/images/placeholder.svg",
-    techStack: ["Next.js", "TypeScript", "Tailwind CSS", "MySQL"],
-    liveUrl: "#",
-    githubUrl: "#",
+      "Centralized school discovery and gave gyms a professional, searchable presence.",
+    image: "/images/projects/dojo-plus-school/cover.avif",
+    gallery: [
+      "/images/projects/dojo-plus-school/gallery-1.avif",
+      "/images/projects/dojo-plus-school/gallery-2.avif",
+    ],
+    techStack: [
+      "Next.js",
+      "React",
+      "TypeScript",
+      "Material UI",
+      "Airtable",
+      "Google Fit API",
+      "Blockchain",
+    ],
+    categories: ["Next.js", "Website", "Frontend"],
+    role: "Full-Stack Developer",
+    responsibilities: [
+      "Built directory listing and school profile pages",
+      "Implemented location-based browsing and filtering",
+      "Connected school data to the shared Dojo+ data layer",
+      "Delivered responsive layouts optimized for mobile discovery",
+      "Created admin tools for maintaining school listings",
+    ],
+    features: [
+      "School directory pages with search and filtering",
+      "Detailed school profile pages",
+      "Location-focused browsing",
+      "Mobile-responsive discovery experience",
+      "Shared data layer with the Dojo+ ecosystem",
+    ],
+    duration: "Ongoing engagement",
+    client: "Dojo+",
+    industry: "Education Technology",
+    caseStudyUrl: "/case-studies/dojo-plus-school",
     featured: true,
-    category: "CRM",
   },
   {
-    id: "portfolio-website",
-    title: "Portfolio Website",
-    tagline: "Premium developer portfolio with animations and SEO optimization.",
+    id: "dojo-plus-sites",
+    title: "Dojo+ Sites",
+    tagline: "Templated, branded websites for martial arts schools.",
     description:
-      "The very portfolio you are viewing now — built to demonstrate modern frontend architecture, motion design, and technical SEO.",
+      "A website-builder layer that gives martial arts gyms fast, branded sites with templates, custom domains, and built-in lead capture.",
     problem:
-      "A generic portfolio fails to communicate business value and doesn't stand out to recruiters or clients.",
+      "Custom sites per gym were too slow and expensive; operators needed brand control and lead capture without managing separate hosting.",
     solution:
-      "Created a custom Next.js 15 portfolio with Framer Motion animations, structured data, dynamic OG images, and performance optimization.",
+      "Built a Next.js platform for templated school sites with subdomain/custom-domain support, schedule pages, contact forms, and lead capture.",
     result:
-      "A differentiated personal brand asset that communicates expertise across software engineering, automation, and procurement.",
-    image: "/images/placeholder.svg",
-    techStack: ["Next.js", "React", "TypeScript", "Tailwind CSS", "Framer Motion"],
-    liveUrl: "#",
-    githubUrl: "#",
+      "Enabled fast, credible website launches managed from a single platform.",
+    image: "/images/projects/dojo-plus-sites/cover.jpg",
+    gallery: [
+      "/images/projects/dojo-plus-sites/gallery-1.avif",
+      "/images/projects/dojo-plus-sites/gallery-2.avif",
+    ],
+    techStack: [
+      "Next.js",
+      "React",
+      "TypeScript",
+      "Material UI",
+      "Airtable",
+      "Google Fit API",
+      "Blockchain",
+    ],
+    categories: ["Next.js", "Website", "Business Automation", "Frontend"],
+    role: "Full-Stack Developer",
+    responsibilities: [
+      "Architected the templated site generation system",
+      "Implemented subdomain and custom-domain routing",
+      "Built school website, schedule, and contact page templates",
+      "Integrated lead capture forms and admin management tools",
+      "Ensured responsive, brand-consistent output across all generated sites",
+    ],
+    features: [
+      "Templated school website generation",
+      "Subdomain and custom-domain support",
+      "Public school profile, schedule, and contact pages",
+      "Integrated lead capture forms",
+      "Centralized admin management",
+      "Responsive, brand-consistent output",
+    ],
+    duration: "Ongoing engagement",
+    client: "Dojo+",
+    industry: "Sports & Fitness",
+    caseStudyUrl: "/case-studies/dojo-plus-sites",
     featured: false,
-    category: "Personal Website",
+  },
+  {
+    id: "inherit-flutterflow",
+    title: "INHerit",
+    tagline: "Family health history mobile app built with FlutterFlow.",
+    description:
+      "A FlutterFlow mobile app that helps users collect family health history, connect with relatives, and receive personalized appointment support.",
+    problem:
+      "Family health history, surveys, records, and appointment context were siloed across paper, portals, and memory.",
+    solution:
+      "Contributed to the FlutterFlow app, integrating Firebase and Django with Azure SQL for family-history, survey, record, and reward workflows.",
+    result:
+      "Delivered a structured, mobile-first family-health experience that reduced scattered manual effort.",
+    image: "/images/projects/inherit/cover.jpeg",
+    gallery: [
+      "/images/projects/inherit/gallery-1.jpeg",
+      "/images/projects/inherit/gallery-2.jpeg",
+    ],
+    techStack: [
+      "FlutterFlow",
+      "Firebase",
+      "Django",
+      "Azure SQL",
+      "REST APIs",
+      "Responsive Design",
+    ],
+    categories: ["FlutterFlow", "Web Application", "Business Automation"],
+    role: "Mobile & Backend Contributor",
+    responsibilities: [
+      "Built user-facing screens and flows in FlutterFlow",
+      "Integrated Firebase for authentication, data, and real-time features",
+      "Connected Django backend services for operational records and business logic",
+      "Worked with Azure SQL for structured health-related data",
+      "Supported research participation and reward workflows",
+    ],
+    features: [
+      "Family health history collection",
+      "Survey and health record workflows",
+      "Biological-relative connections",
+      "Appointment support and preparation",
+      "Research participation with rewards",
+      "Cross-platform mobile experience",
+    ],
+    duration: "Ongoing engagement",
+    client: "INHerit",
+    industry: "Health Technology",
+    caseStudyUrl: "/case-studies/inherit-flutterflow",
+    featured: true,
+  },
+  {
+    id: "rarecan-flutterflow",
+    title: "RareCan",
+    tagline: "Data-driven rare cancer analysis and prognosis platform.",
+    description:
+      "A data-driven platform that structures rare cancer research data to analyze survival outcomes and support personalized prognosis decisions.",
+    problem:
+      "Rare cancer cases and comparable patient histories were not structured for analysis, making personalized insights hard to surface.",
+    solution:
+      "Contributed to structured data workflows, patient-outcome comparison, survival analysis, and prognosis prediction interfaces.",
+    result:
+      "Improved visibility into patient-history comparisons and created a foundation for future analytics.",
+    image: "/images/projects/rarecan/cover.jpg",
+    gallery: [
+      "/images/projects/rarecan/gallery-1.png",
+      "/images/projects/rarecan/gallery-2.png",
+    ],
+    techStack: [
+      "FlutterFlow",
+      "Firebase",
+      "REST APIs",
+      "Responsive Design",
+      "Data Visualization",
+    ],
+    categories: ["FlutterFlow", "Web Application", "Business Automation"],
+    role: "Project Contributor",
+    responsibilities: [
+      "Supported the design of structured rare-cancer data workflows",
+      "Built user flows for patient-outcome comparison and survival analysis",
+      "Contributed to prognosis prediction and decision-support interfaces",
+      "Ensured responsive, accessible layouts for clinical users",
+      "Helped establish admin screens and repeatable research workflows",
+    ],
+    features: [
+      "Rare cancer research data analysis",
+      "Patient outcome comparison",
+      "Survival outcome analysis",
+      "Prognosis prediction",
+      "Similar-patient history matching",
+      "Personalized treatment decision support",
+    ],
+    duration: "Ongoing engagement",
+    client: "RareCan",
+    industry: "Health Technology",
+    caseStudyUrl: "/case-studies/rarecan-flutterflow",
+    featured: false,
   },
 ];
 
 export const featuredProjects = projects.filter((project) => project.featured);
+
+export const projectCategories = [
+  "All",
+  "Frontend",
+  "Next.js",
+  "FlutterFlow",
+  "Business Automation",
+  "Web Application",
+  "Website",
+];

@@ -26,25 +26,36 @@ export const skillCategories: SkillCategory[] = [
     ],
   },
   {
+    id: "mobile",
+    title: "Mobile Development",
+    description: "Building cross-platform mobile applications with visual development and Firebase backends.",
+    skills: [
+      { name: "FlutterFlow", level: "Advanced", description: "Visual app development, Firebase integration, responsive screens, API connections." },
+      { name: "Firebase", level: "Advanced", description: "Authentication, Firestore, Cloud Functions, real-time data." },
+      { name: "Responsive Mobile Design", level: "Expert", description: "Mobile-first layouts, touch interactions, cross-device testing." },
+    ],
+  },
+  {
     id: "backend",
     title: "Backend & APIs",
     description: "Designing and consuming robust APIs and backend services.",
     skills: [
       { name: "REST API", level: "Advanced", description: "Design, integration, error handling, and authentication flows." },
+      { name: "GraphQL", level: "Advanced", description: "Queries, mutations, subscriptions, and AppSync integration." },
       { name: "Node.js", level: "Intermediate", description: "Express servers, middleware, file handling, and API development." },
-      { name: "Express", level: "Intermediate", description: "Routing, middleware, controllers, and REST conventions." },
+      { name: "Django", level: "Intermediate", description: "Models, views, serializers, and REST conventions." },
       { name: "Authentication", level: "Advanced", description: "JWT, OAuth, session management, RBAC, and secure flows." },
     ],
   },
   {
-    id: "databases",
-    title: "Databases",
-    description: "Structuring, querying, and integrating data storage solutions.",
+    id: "cloud",
+    title: "Cloud & DevOps",
+    description: "Deploying, hosting, and integrating cloud-native services.",
     skills: [
-      { name: "SQL", level: "Advanced", description: "Relational design, joins, indexing, and complex queries." },
-      { name: "MySQL", level: "Advanced", description: "Schema design, migrations, performance tuning." },
-      { name: "MongoDB", level: "Intermediate", description: "Document modeling, aggregation, Mongoose." },
-      { name: "NoSQL", level: "Intermediate", description: "Flexible schema design and trade-offs." },
+      { name: "AWS Amplify", level: "Advanced", description: "Auth, API, hosting, and storage for full-stack apps." },
+      { name: "AWS AppSync", level: "Advanced", description: "GraphQL APIs with real-time subscriptions and Cognito auth." },
+      { name: "AWS Cognito", level: "Advanced", description: "User pools, federated sign-in, and secure access control." },
+      { name: "Vercel", level: "Advanced", description: "Deployments, previews, analytics, and edge functions." },
     ],
   },
   {
@@ -73,7 +84,6 @@ export const skillCategories: SkillCategory[] = [
       { name: "VS Code", level: "Expert", description: "Extensions, debugging, snippets, and productivity workflows." },
       { name: "Postman", level: "Advanced", description: "API testing, collections, and documentation." },
       { name: "Figma", level: "Intermediate", description: "Design handoff, component inspection, and prototyping." },
-      { name: "Vercel", level: "Advanced", description: "Deployments, previews, analytics, and edge functions." },
     ],
   },
   {

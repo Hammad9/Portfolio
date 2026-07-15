@@ -10,12 +10,12 @@ export const siteConfig = {
   author: "Muhammad Hammad",
   location: "Pakistan",
   // TODO: Replace with your actual contact details
-  email: "contact@muhammadhammad.dev",
-  linkedin: "https://linkedin.com/in/muhammadhammad",
-  github: "https://github.com/muhammadhammad",
+  email: "devh1020@gmail.com",
+  linkedin: "https://www.linkedin.com/in/hammad-tech",
+  github: "https://github.com/Hammad9",
   twitter: "https://twitter.com/muhammadhammad",
-  whatsapp: "https://wa.me/923001234567",
-  resumeUrl: "https://linkedin.com/in/muhammadhammad",
+  whatsapp: "https://wa.me/923074129929",
+  resumeUrl: "/resume.pdf", // TODO: Replace with your actual resume URL
 } as const;
 
 export const navigation = {
@@ -25,7 +25,6 @@ export const navigation = {
     { name: "Services", href: "#services" },
     { name: "Projects", href: "#projects" },
     { name: "Case Studies", href: "#case-studies" },
-    { name: "Blog", href: "#blog" },
     { name: "Contact", href: "#contact" },
   ],
   footer: [
@@ -36,7 +35,6 @@ export const navigation = {
     { name: "Projects", href: "#projects" },
     { name: "Case Studies", href: "#case-studies" },
     { name: "Experience", href: "#experience" },
-    { name: "Blog", href: "#blog" },
     { name: "Contact", href: "#contact" },
   ],
 } as const;

@@ -16,9 +16,22 @@ import { caseStudies } from "@/lib/data/case-studies";
 export const metadata: Metadata = {
   title: "Case Studies",
   description:
-    "Detailed case studies showing how Muhammad Hammad solves business problems through software engineering, automation, and procurement consulting.",
+    "Detailed case studies showing how Muhammad Hammad solves business problems through Next.js development, FlutterFlow mobile apps, and business automation.",
   alternates: {
     canonical: "/case-studies",
+  },
+  openGraph: {
+    title: "Case Studies — Muhammad Hammad",
+    description:
+      "Detailed case studies showing how Muhammad Hammad solves business problems through Next.js development, FlutterFlow mobile apps, and business automation.",
+    type: "website",
+    url: "/case-studies",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Case Studies — Muhammad Hammad",
+    description:
+      "Detailed case studies showing how Muhammad Hammad solves business problems through Next.js development, FlutterFlow mobile apps, and business automation.",
   },
 };
 
@@ -43,17 +56,17 @@ export default function CaseStudiesPage() {
                   Business problems, <GradientText>engineered solutions</GradientText>
                 </>
               }
-              description="Deep dives into the challenges, decisions, and measurable outcomes behind select projects."
+              description="Deep dives into real projects, the challenges behind them, and the measurable outcomes that came from thoughtful technology choices."
             />
           </MotionSection>
 
           <MotionSection delay={0.1}>
             <StaggerContainer className="space-y-8" staggerDelay={0.15}>
-              {caseStudies.map((study) => (
+              {caseStudies.map((study, index) => (
                 <StaggerItem key={study.id}>
                   <GlowCard className="group overflow-hidden p-0">
-                    <div className="grid gap-0 lg:grid-cols-2">
-                      <div className="relative aspect-video overflow-hidden lg:aspect-auto">
+                    <div className={`grid gap-0 lg:grid-cols-2 ${index % 2 === 1 ? "lg:grid-flow-dense" : ""}`}>
+                      <div className={`relative aspect-video overflow-hidden lg:aspect-auto ${index % 2 === 1 ? "lg:col-start-2" : ""}`}>
                         <Image
                           src={study.image}
                           alt={study.title}
@@ -63,18 +76,32 @@ export default function CaseStudiesPage() {
                         />
                       </div>
 
-                      <div className="flex flex-col justify-center p-6 md:p-10">
+                      <div className={`flex flex-col justify-center p-6 md:p-10 ${index % 2 === 1 ? "lg:col-start-1 lg:row-start-1" : ""}`}>
                         <div className="mb-3 flex flex-wrap items-center gap-3">
                           <Badge variant="secondary" className="bg-primary/10 text-primary">
                             {study.industry}
                           </Badge>
-                          <span className="text-xs text-muted">{study.duration}</span>
+                          {study.duration && <span className="text-xs text-muted">{study.duration}</span>}
                         </div>
 
                         <h2 className="font-heading text-2xl font-bold text-foreground md:text-3xl">
                           {study.title}
                         </h2>
                         <p className="mt-3 text-muted">{study.summary}</p>
+
+                        <div className="mt-6">
+                          <h4 className="font-heading text-sm font-semibold uppercase tracking-wider text-foreground">
+                            Results
+                          </h4>
+                          <ul className="mt-3 space-y-2">
+                            {study.results.slice(0, 2).map((result, i) => (
+                              <li key={i} className="flex items-start gap-2 text-sm text-muted">
+                                <span className="mt-1.5 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-success" />
+                                {result}
+                              </li>
+                            ))}
+                          </ul>
+                        </div>
 
                         <Link
                           href={`/case-studies/${study.slug}`}

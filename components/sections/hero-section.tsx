@@ -171,10 +171,10 @@ export function HeroSection() {
                 size="lg"
                 className="text-foreground hover:bg-surface/50"
               >
-                <Link href="#contact">
+                {/* <Link href="#contact">
                   <Mail className="mr-2 h-4 w-4" />
                   Hire Me
-                </Link>
+                </Link> */}
               </Button>
             </motion.div>
           </div>

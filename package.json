@@ -18,6 +18,7 @@
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "embla-carousel-react": "^8.6.0",
+    "forminit": "^0.2.4",
     "framer-motion": "^12.42.2",
     "gray-matter": "^4.0.3",
     "lucide-react": "^1.24.0",
@@ -37,6 +38,8 @@
     "zod": "^4.4.3"
   },
   "devDependencies": {
+    "@locator/babel-jsx": "^0.5.1",
+    "@locator/webpack-loader": "^0.5.1",
     "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
     "@types/react": "^19",

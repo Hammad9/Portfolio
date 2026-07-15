@@ -22,7 +22,7 @@ export function ProjectsSection() {
                 Featured work that <GradientText>solves real problems</GradientText>
               </>
             }
-            description="A selection of projects where I turned business challenges into scalable, high-performing digital products."
+            description="A selection of projects where I turned business challenges into scalable, high-performing digital products across web and mobile."
           />
         </MotionSection>
 

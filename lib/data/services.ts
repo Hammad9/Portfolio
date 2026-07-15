@@ -13,6 +13,7 @@ import {
   FileCheck,
   ClipboardList,
   ShieldCheck,
+  Smartphone,
   type LucideIcon,
 } from "lucide-react";
 
@@ -22,10 +23,28 @@ export interface Service {
   description: string;
   value: string;
   icon: LucideIcon;
-  category: "development" | "automation" | "procurement";
+  category: "development" | "automation" | "procurement" | "mobile";
 }
 
 export const services: Service[] = [
+  {
+    id: "nextjs-development",
+    title: "Next.js Development",
+    description:
+      "Server-side rendering, static generation, API routes, app-router architecture, and performance optimization for enterprise-grade Next.js applications.",
+    value: "Get the SEO, speed, and scalability benefits of modern Next.js without the complexity overhead.",
+    icon: Zap,
+    category: "development",
+  },
+  {
+    id: "react-development",
+    title: "React Development",
+    description:
+      "Component-driven interfaces with hooks, context, state management, and reusable design systems using React and TypeScript.",
+    value: "Build maintainable frontend products with clean, testable React code.",
+    icon: Palette,
+    category: "development",
+  },
   {
     id: "modern-web-development",
     title: "Modern Web Development",
@@ -36,22 +55,13 @@ export const services: Service[] = [
     category: "development",
   },
   {
-    id: "nextjs-development",
-    title: "Next.js Development",
+    id: "flutterflow-development",
+    title: "FlutterFlow Development",
     description:
-      "Server-side rendering, static generation, API routes, and app-router architecture for enterprise-grade Next.js applications.",
-    value: "Get the SEO, speed, and scalability benefits of modern Next.js without the complexity overhead.",
-    icon: Zap,
-    category: "development",
-  },
-  {
-    id: "react-development",
-    title: "React Development",
-    description:
-      "Component-driven interfaces with hooks, context, state management, and reusable design systems.",
-    value: "Build maintainable frontend products with clean, testable React code.",
-    icon: Palette,
-    category: "development",
+      "Rapid mobile application development with FlutterFlow, Firebase backends, REST API integrations, and responsive cross-platform screens.",
+    value: "Launch polished mobile apps faster without sacrificing backend depth or design quality.",
+    icon: Smartphone,
+    category: "mobile",
   },
   {
     id: "landing-pages",
@@ -75,9 +85,18 @@ export const services: Service[] = [
     id: "api-integration",
     title: "API Integration",
     description:
-      "Connect frontend applications with REST APIs, third-party services, payment gateways, and databases.",
+      "Connect frontend applications with REST APIs, third-party services, payment gateways, social APIs, and databases.",
     value: "Seamlessly integrate your product with the tools and data sources your business depends on.",
     icon: Link2,
+    category: "development",
+  },
+  {
+    id: "business-web-applications",
+    title: "Business Web Applications",
+    description:
+      "End-to-end business tools including dashboards, admin panels, CRM surfaces, directories, and customer portals.",
+    value: "Replace scattered spreadsheets and tools with a unified application your team can rely on.",
+    icon: Code2,
     category: "development",
   },
   {
@@ -165,6 +184,7 @@ export const services: Service[] = [
 
 export const serviceCategories = [
   { id: "development", label: "Web Development" },
+  { id: "mobile", label: "FlutterFlow" },
   { id: "automation", label: "GoHighLevel Automation" },
   { id: "procurement", label: "ePADS Consultancy" },
 ];
