@@ -6,6 +6,7 @@ import { MotionSection, StaggerContainer, StaggerItem } from "@/components/motio
 import { SectionHeader } from "@/components/shared/section-header";
 import { GradientText } from "@/components/shared/gradient-text";
 import { GlowCard } from "@/components/shared/glow-card";
+import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { caseStudies } from "@/lib/data/case-studies";
 
@@ -29,11 +30,11 @@ export function CaseStudiesSection() {
 
         <MotionSection delay={0.1}>
           <StaggerContainer className="space-y-8" staggerDelay={0.15}>
-            {caseStudies.map((study, index) => (
+            {caseStudies.slice(0, 3).map((study, index) => (
               <StaggerItem key={study.id}>
                 <GlowCard className="group overflow-hidden p-0">
-                  <div className={`grid gap-0 lg:grid-cols-2 ${index % 2 === 1 ? "lg:flex-row-reverse" : ""}`}>
-                    <div className="relative aspect-video overflow-hidden lg:aspect-auto">
+                  <div className={`grid gap-0 lg:grid-cols-2 ${index % 2 === 1 ? "lg:grid-flow-dense" : ""}`}>
+                    <div className={`relative aspect-video overflow-hidden lg:aspect-auto ${index % 2 === 1 ? "lg:col-start-2" : ""}`}>
                       <Image
                         src={study.image}
                         alt={study.title}
@@ -43,12 +44,12 @@ export function CaseStudiesSection() {
                       />
                     </div>
 
-                    <div className="flex flex-col justify-center p-6 md:p-10">
+                    <div className={`flex flex-col justify-center p-6 md:p-10 ${index % 2 === 1 ? "lg:col-start-1 lg:row-start-1" : ""}`}>
                       <div className="mb-3 flex flex-wrap items-center gap-3">
-                        <span className="rounded-full bg-primary/10 px-3 py-1 text-xs font-semibold text-primary">
+                        <Badge variant="secondary" className="bg-primary/10 text-primary">
                           {study.industry}
-                        </span>
-                        <span className="text-xs text-muted">{study.duration}</span>
+                        </Badge>
+                        {study.duration && <span className="text-xs text-muted">{study.duration}</span>}
                       </div>
 
                       <h3 className="font-heading text-2xl font-bold text-foreground md:text-3xl">

@@ -44,13 +44,14 @@ export const metadata: Metadata = {
     template: "%s | Muhammad Hammad",
   },
   description:
-    "Muhammad Hammad is a Software Engineer, Frontend Developer, Next.js Developer, React Developer, GoHighLevel Automation Specialist, and Digital Procurement & ePADS Consultant based in Pakistan. He builds scalable web applications, automates business workflows, and helps organizations navigate Pakistan's digital procurement ecosystem.",
+    "Muhammad Hammad is a Software Engineer, Frontend Developer, Next.js Developer, React Developer, FlutterFlow Developer, GoHighLevel Automation Specialist, and Digital Procurement & ePADS Consultant based in Pakistan. He builds scalable web applications, FlutterFlow mobile apps, automates business workflows, and helps organizations navigate Pakistan's digital procurement ecosystem.",
   keywords: [
     "Muhammad Hammad",
     "Software Engineer",
     "Frontend Developer",
     "Next.js Developer",
     "React Developer",
+    "FlutterFlow Developer",
     "GoHighLevel Specialist",
     "CRM Automation",
     "ePADS Consultant",
@@ -59,6 +60,7 @@ export const metadata: Metadata = {
     "Business Automation",
     "Tender Management",
     "Web Development",
+    "Mobile App Development",
   ],
   authors: [{ name: "Muhammad Hammad", url: siteUrl }],
   creator: "Muhammad Hammad",

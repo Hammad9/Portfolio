@@ -28,25 +28,32 @@ export const aboutTimeline: TimelineEvent[] = [
       "Deepened expertise in modern React patterns, TypeScript, and the Next.js ecosystem to build scalable applications.",
   },
   {
-    id: "automation",
+    id: "dojo-plus",
     year: "2022",
-    title: "Expanded into Automation",
+    title: "Built Dojo+ Ecosystem",
     description:
-      "Started helping businesses automate sales and marketing workflows with GoHighLevel, increasing efficiency and conversion rates.",
+      "Started developing the Dojo+ social platform, school directory, and website builder — unifying martial arts communities with Next.js.",
   },
   {
-    id: "epads",
-    year: "2022",
-    title: "Digital Procurement Consulting",
+    id: "spark-host-pivdc",
+    year: "2023",
+    title: "Scaled Complex Dashboards",
     description:
-      "Began supporting organizations with ePADS vendor registration, tender documentation, and compliance in Pakistan's public procurement space.",
+      "Delivered Spark Host marketing dashboard and PiVDC BIM/VDC portal, integrating social APIs, property data, AWS services, and AI search.",
+  },
+  {
+    id: "flutterflow-health",
+    year: "2024",
+    title: "Expanded into FlutterFlow",
+    description:
+      "Contributed to FlutterFlow mobile apps for health technology clients, including INHerit and RareCan, connecting Firebase, Django, and Azure SQL backends.",
   },
   {
     id: "today",
     year: "Today",
     title: "Full-Stack Problem Solver",
     description:
-      "Combining software engineering, automation, and procurement expertise to deliver business outcomes for clients across industries.",
+      "Combining software engineering, mobile development, automation, and procurement expertise to deliver business outcomes for clients across industries.",
   },
 ];
 
@@ -105,7 +112,7 @@ export const aboutContent = {
   journey: [
     "My journey into technology started with a simple question: how can software make businesses run better? That curiosity led me from building basic websites to architecting full-featured applications used by real teams.",
     "Over the years, I've worked with startups, agencies, and established businesses to deliver frontend applications, automation systems, and procurement tools. Each project taught me that the best technology is the kind that solves a problem cleanly and scales quietly.",
-    "Today, I operate at the intersection of software engineering, business automation, and digital procurement. Whether it's a React dashboard, a GoHighLevel workflow, or an ePADS registration, my focus is always the same: deliver outcomes that matter.",
+    "Today, I operate at the intersection of software engineering, mobile development, business automation, and digital procurement. Whether it's a Next.js dashboard, a FlutterFlow health app, a GoHighLevel workflow, or an ePADS registration, my focus is always the same: deliver outcomes that matter.",
   ],
   philosophy:
     "Technology should reduce friction, not create it. I believe in building products that are fast, reliable, and easy to use — products that make teams more productive and businesses more profitable.",

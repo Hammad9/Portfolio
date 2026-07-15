@@ -66,7 +66,7 @@ export function Navbar() {
             </div>
 
             <div className="hidden items-center gap-3 md:flex">
-              <Button asChild variant="ghost" size="sm">
+              {/* <Button asChild variant="ghost" size="sm">
                 <Link href="#contact">Contact</Link>
               </Button>
               <Button
@@ -75,7 +75,7 @@ export function Navbar() {
                 className="bg-primary text-primary-foreground hover:bg-primary/90"
               >
                 <Link href="#contact">Hire Me</Link>
-              </Button>
+              </Button> */}
             </div>
 
             {/* Mobile menu button */}

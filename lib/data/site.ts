@@ -10,30 +10,31 @@ export const personalInfo = {
     "Frontend Developer",
     "Next.js Developer",
     "React Developer",
+    "FlutterFlow Developer",
     "GoHighLevel Automation Specialist",
     "Digital Procurement Consultant",
   ],
   location: "Pakistan",
   summary:
-    "I build modern web applications, automate business workflows, and help organizations navigate Pakistan's digital procurement ecosystem. I specialize in developing scalable, high-performance, business-focused software using modern frontend technologies. Besides software engineering, I also help organizations implement CRM automation using GoHighLevel and support businesses with vendor registration, tender participation, compliance reviews, and digital procurement processes through ePADS. My passion is solving business problems through technology.",
+    "I build modern web applications, FlutterFlow mobile apps, automate business workflows, and help organizations navigate Pakistan's digital procurement ecosystem. I specialize in developing scalable, high-performance, business-focused software using modern frontend technologies. Besides software engineering, I also help organizations implement CRM automation using GoHighLevel and support businesses with vendor registration, tender participation, compliance reviews, and digital procurement processes through ePADS. My passion is solving business problems through technology.",
   shortBio:
-    "Software engineer turning business problems into scalable digital products. I specialize in React, Next.js, GoHighLevel automation, and Pakistan's ePADS procurement ecosystem.",
+    "Software engineer turning business problems into scalable digital products. I specialize in React, Next.js, FlutterFlow mobile development, GoHighLevel automation, and Pakistan's ePADS procurement ecosystem.",
   email: siteConfig.email,
-  phone: "+92 300 123 4567",
+  phone: "+923074129929",
   whatsapp: siteConfig.whatsapp,
   linkedin: siteConfig.linkedin,
   github: siteConfig.github,
   twitter: siteConfig.twitter,
   resumeUrl: siteConfig.resumeUrl,
   availability: "Open to freelance, contract, and full-time opportunities",
-  profileImage: "/images/profile.svg",
+  profileImage: "/images/profile.png",
 };
 
 export const stats = [
-  { label: "Projects Delivered", value: 35, suffix: "+" },
+  { label: "Projects Delivered", value: 9, suffix: "+" },
   { label: "Years Experience", value: 4, suffix: "+" },
-  { label: "Technologies", value: 25, suffix: "+" },
-  { label: "Satisfied Clients", value: 20, suffix: "+" },
+  { label: "Technologies", value: 30, suffix: "+" },
+  { label: "Satisfied Clients", value: 5, suffix: "+" },
 ];
 
 export const socialLinks = [

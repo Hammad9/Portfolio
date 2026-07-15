@@ -24,6 +24,11 @@ import {
 import { contactSchema, type ContactFormValues } from "@/lib/validations/contact";
 import { personalInfo } from "@/lib/data/site";
 import { toast } from "sonner";
+import { Forminit } from 'forminit';
+
+const forminit = new Forminit();
+
+
 
 const contactMethods = [
   {
@@ -89,14 +94,17 @@ export function ContactSection() {
         body: JSON.stringify(data),
       });
 
-      const result = await response.json();
+      // const result = await response.json();
+      //  const formData:any = new FormData(data as any);
+      //  const { data:response, error } = await forminit.submit('YOUR_FORM_ID', formData);
 
-      if (response.ok) {
+
+      if (response) {
         setIsSuccess(true);
         form.reset();
         toast.success("Message sent successfully! I'll get back to you soon.");
       } else {
-        toast.error(result.message || "Something went wrong. Please try again.");
+        toast.error(response || "Something went wrong. Please try again.");
       }
     } catch {
       toast.error("Failed to send message. Please try again.");
