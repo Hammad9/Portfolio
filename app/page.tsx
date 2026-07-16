@@ -24,6 +24,7 @@ export default function HomePage() {
         ]}
       />
       <HeroSection />
+      
       <StatsSection />
       <AboutSection />
       <ServicesSection />
