@@ -8,7 +8,6 @@ import { personalInfo } from "@/lib/data/site";
 const socialLinks = [
   { name: "GitHub", href: personalInfo.github, icon: GithubIcon },
   { name: "LinkedIn", href: personalInfo.linkedin, icon: LinkedinIcon },
-  { name: "Twitter", href: personalInfo.twitter, icon: TwitterIcon },
   { name: "Email", href: `mailto:${personalInfo.email}`, icon: Mail },
 ];
 
