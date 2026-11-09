@@ -22,6 +22,85 @@ export interface Project {
 }
 
 export const projects: Project[] = [
+  
+{
+  id: "nanoshield",
+  title: "NanoShield Roofing",
+  tagline:
+    "An AI-powered roofing customer engagement and business automation platform.",
+  description:
+    "A comprehensive digital transformation project for a roofing and property protection company. The platform combines GoHighLevel CRM, Conversation AI, Voice AI, intelligent lead qualification, automated customer follow-ups, sales pipeline management, and AI-powered conversation analysis to streamline roofing inquiries and customer acquisition.",
+  problem:
+    "NanoShield needed a centralized system to manage roofing inquiries, customer conversations, lead qualification, appointment requests, and sales follow-ups. Manual processes and disconnected customer interactions made it difficult to maintain consistent communication, track lead intent, and manage opportunities efficiently.",
+  solution:
+    "Implemented a GoHighLevel-based CRM and AI automation ecosystem with separate Conversation AI and Voice AI agents. Developed automated workflows for lead qualification, customer intent detection, appointment readiness, follow-up management, vendor message filtering, and lead routing. Designed an n8n and Google Gemini-based architecture for conversation analysis, lead categorization, and sales intelligence.",
+  result:
+    "Established a centralized customer engagement and lead management system connecting AI conversations, CRM records, sales opportunities, and automated communication workflows. Created a scalable foundation for intelligent lead qualification, structured follow-ups, sales visibility, and AI-assisted customer relationship management.",
+  image: "/images/projects/nanoshield/gallery-1.png",
+  gallery: [
+    "/images/projects/nanoshield/cover.png",
+    // "/images/projects/nanoshield/cover.png",
+    "/images/projects/nanoshield/gallery-1.png",
+    "/images/projects/nanoshield/gallery-2.png",
+  ],
+  techStack: [
+    "GoHighLevel",
+    "LeadConnector",
+    "Conversation AI",
+    "Voice AI",
+    "n8n",
+    "Google Gemini API",
+    "REST APIs",
+    "Mailgun",
+    "Namecheap DNS",
+    "Email Marketing Automation",
+    "Hearth Financing Integration",
+  ],
+  categories: [
+    "AI Automation",
+    "CRM Integration",
+    "Business Process Automation",
+    "Marketing Automation",
+  ],
+  role: "CRM & AI Automation Developer",
+  responsibilities: [
+    "Configured GoHighLevel CRM pipelines, opportunity management, contact records, and custom fields",
+    "Developed Conversation AI and Voice AI agents for automated customer engagement and roofing lead qualification",
+    "Implemented structured customer information collection and appointment qualification requirements",
+    "Designed automated workflows for short-term, mid-term, and long-term customer intent detection",
+    "Built conditional workflow logic for lead follow-ups and customer response handling",
+    "Implemented marketing and vendor solicitation detection and opportunity routing logic",
+    "Designed n8n and Google Gemini integration architecture for AI-powered conversation analysis",
+    "Developed lead categorization logic for CRM tagging, internal notes, and sales call recommendations",
+    "Configured and troubleshot custom domain DNS, SPF, DKIM, DMARC, and email sending infrastructure",
+    "Created branded HTML email newsletter templates and segmented email marketing campaigns",
+    "Worked on appointment coordination, internal notifications, and financing integration requirements",
+    "Troubleshot CRM contact field synchronization and opportunity data consistency",
+  ],
+  features: [
+    "AI-powered website chat and customer engagement",
+    "Voice AI for inbound roofing inquiries",
+    "Automated lead qualification and contact information collection",
+    "Customer and property information management",
+    "Appointment qualification and coordination workflows",
+    "GoHighLevel CRM and sales pipeline automation",
+    "Short-term, mid-term, and long-term customer intent detection",
+    "Automated conditional customer follow-ups",
+    "Marketing and vendor message detection",
+    "AI-powered conversation analysis using Google Gemini",
+    "Automated lead categorization and CRM tagging",
+    "Internal sales notes and AI-generated call recommendations",
+    "Segmented email marketing and branded newsletters",
+    "Custom email domain authentication and deliverability configuration",
+    "Hearth financing integration support",
+    "Automated appointment notifications",
+  ],
+  duration: "Ongoing engagement",
+  client: "NanoShield LLC",
+  industry: "Roofing & Construction",
+  caseStudyUrl: "/case-studies/nanoshield",
+  featured: true,
+},
   {
     id: "dojo-plus",
     title: "Dojo+",
